@@ -1,6 +1,6 @@
 export async function fetchSalesData() {
   try {
-    const basePath = window.location.pathname.startsWith('/Ecommerce-Dashboard')
+    const basePath = window.location.pathname.includes('/Ecommerce-Dashboard')
       ? 'https://kaleongtongproject.github.io/Ecommerce-Dashboard'
       : '';
 
