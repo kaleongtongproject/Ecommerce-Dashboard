@@ -1,0 +1,187 @@
+{
+  "dailySales": [
+    {
+      "date": "2025-03-25",
+      "categories": {
+        "Electronics": 750,
+        "Clothing": 500,
+        "Home & Garden": 300,
+        "Beauty": 250
+      }
+    },
+    {
+      "date": "2025-03-26",
+      "categories": {
+        "Electronics": 1200,
+        "Clothing": 600,
+        "Home & Garden": 300,
+        "Beauty": 200
+      }
+    },
+    {
+      "date": "2025-03-27",
+      "categories": {
+        "Electronics": 1000,
+        "Clothing": 500,
+        "Home & Garden": 400,
+        "Beauty": 200
+      }
+    },
+    {
+      "date": "2025-03-28",
+      "categories": {
+        "Electronics": 950,
+        "Clothing": 400,
+        "Home & Garden": 800,
+        "Beauty": 500
+      }
+    },
+    {
+      "date": "2025-03-29",
+      "categories": {
+        "Electronics": 880,
+        "Clothing": 300,
+        "Home & Garden": 400,
+        "Beauty": 400
+      }
+    },
+    {
+      "date": "2025-03-30",
+      "categories": {
+        "Electronics": 1000,
+        "Clothing": 600,
+        "Home & Garden": 500,
+        "Beauty": 300
+      }
+    },
+    {
+      "date": "2025-03-31",
+      "categories": {
+        "Electronics": 1300,
+        "Clothing": 800,
+        "Home & Garden": 400,
+        "Beauty": 390
+      }
+    }
+  ],
+  "categorySales": [
+    {
+      "category": "Electronics",
+      "total": 7080,
+      "subcategories": [
+        { "name": "Phones", "total": 2800 },
+        { "name": "Laptops", "total": 2200 },
+        { "name": "Accessories", "total": 2080 }
+      ]
+    },
+    {
+      "category": "Clothing",
+      "total": 3700,
+      "subcategories": [
+        { "name": "Men", "total": 1700 },
+        { "name": "Women", "total": 1500 },
+        { "name": "Kids", "total": 500 }
+      ]
+    },
+    {
+      "category": "Home & Garden",
+      "total": 3100,
+      "subcategories": [
+        { "name": "Furniture", "total": 1400 },
+        { "name": "Outdoor", "total": 900 },
+        { "name": "Decor", "total": 800 }
+      ]
+    },
+    {
+      "category": "Beauty",
+      "total": 2240,
+      "subcategories": [
+        { "name": "Skincare", "total": 900 },
+        { "name": "Makeup", "total": 700 },
+        { "name": "Haircare", "total": 640 }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "#1001",
+      "customer": "Alice Johnson",
+      "date": "2025-03-31",
+      "total": 149.99,
+      "category": "Beauty",
+      "status": "Paid"
+    },
+    {
+      "orderId": "#1002",
+      "customer": "Brian Lee",
+      "date": "2025-03-30",
+      "total": 89.5,
+      "category": "Clothing",
+      "status": "Shipped"
+    },
+    {
+      "orderId": "#1003",
+      "customer": "Carla Mendes",
+      "date": "2025-03-29",
+      "total": 220.0,
+      "category": "Home & Garden",
+      "status": "Paid"
+    },
+    {
+      "orderId": "#1004",
+      "customer": "Daniel Park",
+      "date": "2025-03-29",
+      "total": 45.75,
+      "category": "Beauty",
+      "status": "Pending"
+    },
+    {
+      "orderId": "#1005",
+      "customer": "Emma Garcia",
+      "date": "2025-03-28",
+      "total": 199.99,
+      "category": "Electronics",
+      "status": "Cancelled"
+    },
+    {
+      "orderId": "#1006",
+      "customer": "Felix Tran",
+      "date": "2025-03-28",
+      "total": 349.0,
+      "category": "Electronics",
+      "status": "Paid"
+    },
+    {
+      "orderId": "#1007",
+      "customer": "Gina Torres",
+      "date": "2025-03-27",
+      "total": 120.0,
+      "category": "Clothing",
+      "status": "Paid"
+    },
+    {
+      "orderId": "#1008",
+      "customer": "Hector Ramirez",
+      "date": "2025-03-27",
+      "total": 320.99,
+      "category": "Home & Garden",
+      "status": "Shipped"
+    },
+    {
+      "orderId": "#1009",
+      "customer": "Ivy Chen",
+      "date": "2025-03-26",
+      "total": 110.49,
+      "category": "Beauty",
+      "status": "Paid"
+    },
+    {
+      "orderId": "#1010",
+      "customer": "James Allen",
+      "date": "2025-03-25",
+      "total": 599.0,
+      "category": "Electronics",
+      "status": "Shipped"
+    }
+  ]
+}
