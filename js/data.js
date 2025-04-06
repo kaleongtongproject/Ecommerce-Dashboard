@@ -6,7 +6,9 @@ export async function fetchSalesData() {
 
     console.log('base Path: ', basePath);
     console.log('window pathname: ', window.location.pathname);
-    const response = await fetch(`./data/salesData.json`);
+    const response = await fetch(
+      `https://kaleongtongproject.github.io/Ecommerce-Dashboard/data/salesData.json`
+    );
 
     if (!response.ok) throw new Error('Failed to fetch sales data');
     return await response.json();
