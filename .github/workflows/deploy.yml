@@ -1,14 +1,17 @@
-name: Deploy to GitHub Pages
+name: Deploy static site to Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: ['main']
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -20,11 +23,10 @@ jobs:
       - name: 📦 Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: 📤 Upload static site
+      - name: 📤 Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: . # Use your actual site folder if needed
+          path: '.' # Use '.' or your build folder
 
       - name: 🚀 Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
-        id: deployment
