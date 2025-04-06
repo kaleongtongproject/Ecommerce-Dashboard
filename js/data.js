@@ -1,9 +1,13 @@
 export async function fetchSalesData() {
   try {
-    const response = await fetch('./data/salesData.json');
+    const basePath = window.location.pathname.includes('/Ecommerce-Dashboard')
+      ? '/Ecommerce-Dashboard'
+      : '';
+
+    const response = await fetch(`${basePath}/data/salesData.json`);
+
     if (!response.ok) throw new Error('Failed to fetch sales data');
-    const data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
     console.error('Error loading data:', error);
     throw error;
