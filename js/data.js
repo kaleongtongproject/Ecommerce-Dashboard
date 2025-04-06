@@ -1,7 +1,7 @@
 export async function fetchSalesData() {
   try {
     const basePath = window.location.pathname.startsWith('/Ecommerce-Dashboard')
-      ? '/Ecommerce-Dashboard'
+      ? 'https://kaleongtongproject.github.io/Ecommerce-Dashboard'
       : '';
 
     const response = await fetch(`${basePath}/data/salesData.json`);
