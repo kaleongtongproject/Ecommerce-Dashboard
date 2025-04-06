@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -21,8 +23,8 @@ jobs:
       - name: 📤 Upload static site
         uses: actions/upload-pages-artifact@v2
         with:
-          path: .
+          path: . # Use your actual site folder if needed
 
       - name: 🚀 Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v2
+        id: deployment
