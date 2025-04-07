@@ -8,7 +8,9 @@ import { initThemeToggle } from './utils/themeToggle.js';
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     // Load mock data
-    const response = await fetch('./data/salesData.json');
+    const response = await fetch(
+      `https://kaleongtongproject.github.io/Ecommerce-Dashboard/data/salesData.json`
+    );
     const data = await response.json();
 
     // Initialize UI
