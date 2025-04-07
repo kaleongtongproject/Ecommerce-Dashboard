@@ -1,3 +1,30 @@
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --panel: #ffffff;
+  --border: #e5e7eb;
+}
+
+[data-theme='dark'] {
+  --bg: #111827;
+  --text: #f9fafb;
+  --panel: #1f2937;
+  --border: #374151;
+}
+
+.panel,
+.chart-card,
+.orders,
+.sidebar,
+.filters,
+.header {
+  background-color: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
 /* Reset & Base Styles */
 * {
   margin: 0;
@@ -5,9 +32,9 @@
   box-sizing: border-box;
 }
 body {
+  background-color: var(--bg);
+  color: var(--text);
   font-family: 'Inter', sans-serif;
-  background-color: #f9fafb;
-  color: #111827;
 }
 
 /* Grid Layout */
@@ -20,7 +47,6 @@ body {
 /* Sidebar */
 .sidebar {
   background-color: #1f2937;
-  color: white;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
@@ -73,7 +99,6 @@ body {
   gap: 1.5rem;
 }
 .panel {
-  background-color: white;
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
@@ -88,7 +113,6 @@ body {
   gap: 2rem;
 }
 .chart-card {
-  background-color: white;
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
@@ -96,7 +120,6 @@ body {
 
 /* Orders Table */
 .orders {
-  background-color: white;
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
@@ -108,19 +131,11 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-thead {
-  background-color: #f3f4f6;
-}
+
 th,
 td {
   padding: 0.75rem;
   text-align: left;
-}
-tr:nth-child(even) {
-  background-color: #f9fafb;
-}
-tr:hover {
-  background-color: #eef2f7;
 }
 
 .status {

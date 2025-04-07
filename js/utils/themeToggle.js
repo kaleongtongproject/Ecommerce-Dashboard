@@ -1,32 +1,23 @@
-// themeToggle.js
-
 export function initThemeToggle() {
-  const root = document.documentElement;
-  const toggleButton = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  const toggleBtn = document.getElementById('themeToggle');
 
-  // Apply stored theme or system preference
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    root.setAttribute('data-theme', savedTheme);
-  } else {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)')
-      .matches;
-    root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-  }
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = saved || (prefersDark ? 'dark' : 'light');
 
-  // Set initial button icon
-  updateButtonIcon(toggleButton, root.getAttribute('data-theme'));
+  html.setAttribute('data-theme', theme);
+  updateIcon(theme);
 
-  // Toggle theme on button click
-  toggleButton.addEventListener('click', () => {
-    const current = root.getAttribute('data-theme');
+  toggleBtn.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
+    html.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
-    updateButtonIcon(toggleButton, next);
+    updateIcon(next);
   });
-}
 
-function updateButtonIcon(button, theme) {
-  button.textContent = theme === 'dark' ? '🌙' : '☀️';
+  function updateIcon(theme) {
+    toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  }
 }
