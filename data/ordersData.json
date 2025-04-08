@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ORD001",
+    "customer": "John Doe",
+    "date": "2025-03-25",
+    "total": 240.5,
+    "status": "Shipped"
+  },
+  {
+    "id": "ORD002",
+    "customer": "Jane Smith",
+    "date": "2025-03-28",
+    "total": 120.99,
+    "status": "Processing"
+  },
+  {
+    "id": "ORD003",
+    "customer": "Emma Johnson",
+    "date": "2025-03-29",
+    "total": 310,
+    "status": "Delivered"
+  }
+]
