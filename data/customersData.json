@@ -1,0 +1,42 @@
+[
+  {
+    "id": 3214,
+    "name": "Darlene Robertson",
+    "email": "darlene@example.com",
+    "location": "San Francisco",
+    "orders": 4,
+    "spent": 386,
+    "status": "Active",
+    "new": false
+  },
+  {
+    "id": 3213,
+    "name": "Leslie Alexander",
+    "email": "leslie@example.com",
+    "location": "New York, City",
+    "orders": 2,
+    "spent": 264,
+    "status": "Inactive",
+    "new": true
+  },
+  {
+    "id": 3212,
+    "name": "Kathryn Murphy",
+    "email": "kathryn@example.com",
+    "location": "San Francisco",
+    "orders": 10,
+    "spent": 1174,
+    "status": "Churned",
+    "new": false
+  },
+  {
+    "id": 3211,
+    "name": "Guy Hawkins",
+    "email": "guy@example.com",
+    "location": "Chicago, IL",
+    "orders": 3,
+    "spent": 524,
+    "status": "Premium",
+    "new": true
+  }
+]

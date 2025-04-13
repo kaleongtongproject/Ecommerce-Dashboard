@@ -1,0 +1,98 @@
+[
+  {
+    "id": "P001",
+    "name": "Classic T-Shirt",
+    "price": 19.99,
+    "stock": 25,
+    "status": "Active",
+    "image": "./assets/images/t-shirt.png"
+  },
+  {
+    "id": "P002",
+    "name": "Blue Jeans",
+    "price": 49.99,
+    "stock": 12,
+    "status": "Active",
+    "image": "./assets/images/pant.png"
+  },
+  {
+    "id": "P003",
+    "name": "Crewneck Sweater",
+    "price": 39.99,
+    "stock": 8,
+    "status": "Inactive",
+    "image": "./assets/images/sweater.png"
+  },
+  {
+    "id": "P004",
+    "name": "Brown Suede Sneakers",
+    "price": 69.99,
+    "stock": 5,
+    "status": "Active",
+    "image": "./assets/images/shoe.png"
+  },
+  {
+    "id": "P005",
+    "name": "Ceramic Mug",
+    "price": 12.99,
+    "stock": 18,
+    "status": "Active",
+    "image": "./assets/images/cup.png"
+  },
+  {
+    "id": "P006",
+    "name": "Non-stick Wok",
+    "price": 34.99,
+    "stock": 10,
+    "status": "Active",
+    "image": "./assets/images/wok.png"
+  },
+  {
+    "id": "P007",
+    "name": "Theme park Headband",
+    "price": 15.99,
+    "stock": 30,
+    "status": "Active",
+    "image": "./assets/images/themehat.png"
+  },
+  {
+    "id": "P008",
+    "name": "Makeup Set",
+    "price": 22.5,
+    "stock": 16,
+    "status": "Active",
+    "image": "./assets/images/makeup.png"
+  },
+  {
+    "id": "P009",
+    "name": "Analog Wall Clock",
+    "price": 24.99,
+    "stock": 14,
+    "status": "Active",
+    "image": "./assets/images/clock.png"
+  },
+  {
+    "id": "P010",
+    "name": "DSLR Camera",
+    "price": 499.99,
+    "stock": 6,
+    "status": "Active",
+    "image": "./assets/images/camera.png"
+  },
+  {
+    "id": "P011",
+    "name": "Teddy Bear",
+    "price": 17.99,
+    "stock": 22,
+    "status": "Active",
+    "image": "./assets/images/bear.png"
+  },
+  {
+    "id": "P012",
+    "name": "Stainless Steel Bottle",
+    "price": 28.99,
+    "stock": 20,
+    "status": "Active",
+    "image": "./assets/images/bottle.png"
+  }
+]

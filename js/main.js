@@ -4,6 +4,8 @@ import { renderOrdersTable } from './components/table.js';
 import { setupFilters } from './components/filters.js';
 import { initThemeToggle } from './utils/themeToggle.js';
 import { renderOrders } from './components/orders.js';
+import { renderProducts } from './components/products.js';
+import { renderCustomers } from './components/customers.js';
 
 // 📦 Dashboard setup
 async function renderDashboard() {
@@ -118,5 +120,11 @@ document.querySelector('.sidebar').addEventListener('click', async (e) => {
     renderOrders(); // Renders orders page from JSON
   }
 
-  // Future: add Products, Customers support here
+  if (page === 'Products') {
+    renderProducts();
+  }
+
+  if (page === 'Customers') {
+    renderCustomers();
+  }
 });
